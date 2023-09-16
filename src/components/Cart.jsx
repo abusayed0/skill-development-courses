@@ -1,11 +1,12 @@
 import { list } from "postcss";
 
-const Cart = ({cartCourses}) => {
+const Cart = ({cartCourses, hourRemaining}) => {
     // console.log(cartCourses);
+    const totalCredit = cartCourses.reduce((previousTotal, cartCourse) => previousTotal + cartCourse.credit,0);
     return (
         <div>
             <div className="p-6 bg-white rounded-2xl">
-                <h3 className="text-[#2F80ED] font-bold">Credit Hour Remaining 7 hr</h3>
+                <h3 className="text-[#2F80ED] font-bold">Credit Hour Remaining {hourRemaining} hr</h3>
                 <hr className="my-4" />
                 <div>
                     <h2 className="text-xl font-bold">Course Name :</h2>
@@ -16,7 +17,7 @@ const Cart = ({cartCourses}) => {
                     </ul>
                 </div>
                 <hr className="my-4"/>
-                <h3 className="font-medium">Total Credit Hour : 13</h3>
+                <h3 className="font-medium">Total Credit Hour : {totalCredit}</h3>
             </div>
         </div>
     );

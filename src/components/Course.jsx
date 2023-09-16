@@ -17,7 +17,7 @@ const Course = ({ course, handleAddToCart}) => {
                     </div>
                     <div className="flex items-center gap-2">
                         <FaBookReader className="text-2xl"></FaBookReader>
-                        <p className="font-medium">Credit : {credit}</p>
+                        <p className="font-medium">Credit : {credit}hr</p>
                     </div>
                 </div>
                 <button onClick={() => {handleAddToCart(course)}} className="mt-6 font-semibold text-lg py-2 bg-[#2F80ED] rounded-lg text-white w-full">Select</button>

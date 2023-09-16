@@ -7,6 +7,7 @@ import Header from './components/Header'
 
 function App() {
   const [cartCourses, setCartCourses] = useState([]);
+  const [hourRemaining, setHourRemaining] = useState(20);
   const handleAddToCart = course => {
     // console.log(course);
     const isAlreadyAdded = cartCourses.find(cartCourse => cartCourse.id === course.id);
@@ -14,8 +15,17 @@ function App() {
       alert("already added");
     }
     else {
+      const courseCredit = course.credit;
+      if((hourRemaining - courseCredit) < 0){
+        alert("you don't have enough credit");
+        return;
+      }
+      else{
+        setHourRemaining(hourRemaining - courseCredit);
+      }
       const newCartCourses = [...cartCourses, course];
       setCartCourses(newCartCourses);
+      
     }
   };
   return (
@@ -23,7 +33,7 @@ function App() {
       <Header />
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <Courses handleAddToCart={handleAddToCart}/>
-        <Cart cartCourses={cartCourses}/>
+        <Cart cartCourses={cartCourses} hourRemaining={hourRemaining}/>
       </div>
     </div>
   )
