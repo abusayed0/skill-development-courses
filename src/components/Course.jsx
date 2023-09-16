@@ -1,7 +1,7 @@
 import { FaBookReader, FaDollarSign } from 'react-icons/fa';
 
-const Course = ({ course }) => {
-    console.log(course);
+const Course = ({ course, handleAddToCart}) => {
+    // console.log(course);
     const { id, cover_img, course_name, description, price, credit } = course;
     return (
         <div className="rounded-xl p-4 bg-white">
@@ -20,7 +20,7 @@ const Course = ({ course }) => {
                         <p className="font-medium">Credit : {credit}</p>
                     </div>
                 </div>
-                <button className="mt-6 font-semibold text-lg py-2 bg-[#2F80ED] rounded-lg text-white w-full">Select</button>
+                <button onClick={() => {handleAddToCart(course)}} className="mt-6 font-semibold text-lg py-2 bg-[#2F80ED] rounded-lg text-white w-full">Select</button>
             </div>
         </div>
     );
