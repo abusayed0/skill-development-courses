@@ -4,6 +4,7 @@ import './App.css'
 import Cart from './components/Cart'
 import Courses from './components/Courses'
 import Header from './components/Header'
+import Swal from 'sweetalert2'
 
 function App() {
   const [cartCourses, setCartCourses] = useState([]);
@@ -12,12 +13,16 @@ function App() {
     // console.log(course);
     const isAlreadyAdded = cartCourses.find(cartCourse => cartCourse.id === course.id);
     if(isAlreadyAdded){
-      alert("already added");
+      Swal.fire(`You have already added : ${course.course_name}`)
     }
     else {
       const courseCredit = course.credit;
       if((hourRemaining - courseCredit) < 0){
-        alert("you don't have enough credit");
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `You have only ${hourRemaining}hr credit remaining!`,
+        })
         return;
       }
       else{
