@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://i.ibb.co/Zgz4gHR/Rectangle-2.png",
+      "course_name": "Python Programming Essentials",
+      "description": "Learn the basics of Python programming and build your first Python applications.",
+      "price": 49,
+      "credit": 3
+    },
+    {
+      "id": 2,
+      "cover_img": "https://i.ibb.co/yPcd44X/Rectangle-2-1.png",
+      "course_name": "Database Management Fundamentals",
+      "description": "Master the fundamentals of database management and SQL.",
+      "price": 79,
+      "credit": 4
+    },
+    {
+      "id": 3,
+      "cover_img": "https://i.ibb.co/p166DdM/Rectangle-2-2.png",
+      "course_name": "C Programming for Beginners",
+      "description": "Get started with C programming and learn the essentials of this powerful language.",
+      "price": 69,
+      "credit": 5
+    },
+    {
+      "id": 4,
+      "cover_img": "https://i.ibb.co/LkmGSZ8/Rectangle-2-3.png",
+      "course_name": "Algorithmic Problem Solving",
+      "description": "Improve your problem-solving skills with algorithms and data structures.",
+      "price": 59,
+      "credit": 3
+    },
+    {
+      "id": 5,
+      "cover_img": "https://i.ibb.co/Yhq2Czg/Rectangle-2-4.png",
+      "course_name": "C++ Programming Mastery",
+      "description": "Master C++ programming and develop advanced applications.",
+      "price": 49,
+      "credit": 2
+    },
+    {
+      "id": 6,
+      "cover_img": "https://i.ibb.co/VNhPFz3/Rectangle-2-5.png",
+      "course_name": "Research and Development Strategies",
+      "description": "Explore strategies for effective research and development.",
+      "price": 89,
+      "credit": 4
+    },
+    {
+      "id": 7,
+      "cover_img": "https://i.ibb.co/6NfSF4n/Rectangle-2-6.png",
+      "course_name": "Creative Thinking Techniques",
+      "description": "Unlock your creative potential with innovative thinking techniques.",
+      "price": 69,
+      "credit": 3
+    },
+    {
+      "id": 8,
+      "cover_img": "https://i.ibb.co/5sGfXpz/Rectangle-3.png",
+      "course_name": "Data Structures and Algorithms",
+      "description": "Learn advanced data structures and algorithms for efficient coding.",
+      "price": 79,
+      "credit": 5
+    },
+    {
+      "id": 9,
+      "cover_img": "https://i.ibb.co/2PpFrJk/Rectangle-3-1.png",
+      "course_name": "AWS Cloud Computing Essentials",
+      "description": "Get started with Amazon Web Services (AWS) for cloud computing.",
+      "price": 59,
+      "credit": 3
+    }
+  ]
+  
