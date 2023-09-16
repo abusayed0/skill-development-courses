@@ -7,9 +7,9 @@ import Header from './components/Header'
 function App() {
 
   return (
-    <div className="max-w-[1440px] mx-auto px-1 md:px-6 lg:px-14">
+    <div className="max-w-[1440px] mx-auto px-1 md:px-4 lg:px-14">
       <Header />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <Courses />
         <Cart/>
       </div>
